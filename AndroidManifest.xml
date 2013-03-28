@@ -13,7 +13,7 @@
 
     <application
         android:icon="@drawable/ggc_connect_icon"
-        android:label="@string/app_name" >
+        android:label="@string/app_name" android:theme="@style/GGCDefaultTheme">
         <activity
             android:name="edu.ggc.it.Main"
             android:label="@string/app_name"

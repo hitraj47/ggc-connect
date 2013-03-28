@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ggc_green">#4C7801</color>
+    <color name="ggc_green">#00704A</color>
     <color name="thai_spinner_color">#00704A</color>
     <color name="thai_white_color">#FFFFFF</color>
 </resources>
