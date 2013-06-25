@@ -12,6 +12,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Menu;
@@ -395,7 +396,12 @@ public class ScheduleActivity extends Activity {
 			toast.show();
 		} else {
 			refreshList();
+			updateNotifications();
 		}
+	}
+	
+	private void updateNotifications() {
+		SharedPreferences settings = getSharedPreferences(SchedulePreferenceActivity.SHARED_PREFERENCES_FILE, 0);
 	}
 	
 	private void refreshList() {

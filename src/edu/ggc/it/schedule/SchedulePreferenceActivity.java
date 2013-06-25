@@ -37,8 +37,8 @@ public class SchedulePreferenceActivity extends Activity {
 		super.onPause();
 		SharedPreferences settings = getSharedPreferences(SHARED_PREFERENCES_FILE, 0);
 		SharedPreferences.Editor editor = settings.edit();
-		editor.putString("schedule_reminder_string", spnReminderTime.getSelectedItem().toString());
-		editor.putInt("schedule_reminder_pos", spnReminderTime.getSelectedItemPosition());
+		editor.putString(KEY_REMINDER_STRING, spnReminderTime.getSelectedItem().toString());
+		editor.putInt(KEY_SPINNER_REMINDER_POS, spnReminderTime.getSelectedItemPosition());
 		editor.commit();
 	}
 }
